@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+body{
+    background: #2c3333;
+}
+
+.calculator {
+    display: grid;
+    gap: 5px;
+    background: #395b64;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width : 100%;
+    min-height: 80vh;
+    max-width: 405px;
+    border-radius: 20px;
+    /*max-width: 300px; /* Adjust as needed */
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .output-bar {
+    grid-column: span 5;
+    text-align: right; 
+    margin-right: 30px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+  }
+  
+  #result {
+    width: 100%;
+    margin-right: 10px;
+    height: 120px;
+    text-align: right; 
+    display: flex;
+    overflow-y: auto;
+    background: #1f2424;
+    color: antiquewhite;
+    border-radius: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    font-size: 40px;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    align-items: center; 
+    padding-bottom: 20%;
+    font-size: 16px;
+  }
+  
+  #enter {
+    grid-column: span 2; /* Make the ENTER button span two columns */
+  }
+
+  #bracket-button1{
+    grid-column: span 2;
+    background: #8fbcc2;
+    box-shadow: 0px 0px 8px #8fbcc2;
+  }
+
+  .calculator button{
+  font-weight: 600;
+  border: none;
+  background: none;
+  box-shadow: 0px 0px 6px antiquewhite;
+  color: antiquewhite;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  }
+
+  .calculator button:hover{
+    background: #2c3333;
+
+  }
